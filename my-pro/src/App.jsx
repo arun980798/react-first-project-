@@ -1,12 +1,30 @@
+import { useState } from 'react';
 import React from 'react'
 
-const App = () => {
+function App() {
+
+   let [ counter, setCounter]=  useState(12)
+
+ 
+
+  const addValue =() =>{
+    console.log("clicked ", counter);
+    counter= counter+1 
+    setCounter(counter)
+  }
+
+
+
+
   return (
-  <div>
-    <div></div>
-
-
-  </div>
+    <div className=' bg-black grid justify-center h-screen align-middle text-white items-center'>
+      <h1> counter {counter} </h1>
+      <button className=' border-2 border-amber-200 rounded-2xl ' onClick={addValue}> add value {counter} </button>
+      <button> remove this line  {counter} </button>
+      <h1>footer {counter} </h1>
+      
+      
+    </div>
   )
 }
 
