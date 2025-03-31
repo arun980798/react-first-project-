@@ -13,6 +13,12 @@ function App() {
     setCounter(counter)
   }
 
+  const removeValue =() =>{
+    console.log("clicked ", counter);
+    counter= counter-1
+    setCounter(counter)
+  }
+
 
 
 
@@ -20,7 +26,7 @@ function App() {
     <div className=' bg-black grid justify-center h-screen align-middle text-white items-center'>
       <h1> counter {counter} </h1>
       <button className=' border-2 border-amber-200 rounded-2xl ' onClick={addValue}> add value {counter} </button>
-      <button> remove this line  {counter} </button>
+      <button onClick={removeValue}> remove this line  {counter} </button>
       <h1>footer {counter} </h1>
       
       
