@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import React from 'react'
+import login from './component/auth/login';
+
 
 function App() {
 
@@ -9,20 +11,13 @@ function App() {
 
   return (
   <>
-    <div className=' bg-black h-screen w-full  '>
-        <div className=' bg-white align-bottom mt-12 h-6 flex '>
-          <div>white    </div><br />
-          <div>black    </div>
+    <login />
+    
 
 
-        </div>
+    
+  
 
-    </div>
-          
-          
-          
-          
-          
   </>
 
 
