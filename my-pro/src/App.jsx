@@ -1,29 +1,16 @@
 import { useState } from 'react';
 import React from 'react'
-import login from './component/auth/login';
+import Login from './component/auth/Login';
 
 
 function App() {
 
-  
-
-
-
   return (
   <>
-    <login />
-    hello world and this project i use to do some kond of project like bandk manement system 
-    <div className=' bg-red-50 '>
-      hrllo world 
-    </div>
-
-    
-
-
-
-    
+  <div className=''>
+    <Login />
   
-
+    </div>
   </>
 
 
@@ -33,3 +20,4 @@ function App() {
 }
 
 export default App
+
